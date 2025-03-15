@@ -3,7 +3,7 @@
 import { ReactNode } from "react";
 import { useParams } from "next/navigation";
 import { ClientSideSuspense, RoomProvider } from "@liveblocks/react";
-import { Loading } from "@/components/Loading";
+import { Loading } from "@/components/loading";
 
 export default function Room({ children }: { children: ReactNode }) {
   const { roomId } = useParams();
