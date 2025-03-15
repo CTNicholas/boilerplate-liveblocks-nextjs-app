@@ -16,7 +16,7 @@ export default function Room({ children }: { children: ReactNode }) {
       initialStorage={{}}
     >
       <ClientSideSuspense fallback={<Loading />}>
-        {() => children}
+        {children}
       </ClientSideSuspense>
     </RoomProvider>
   );
