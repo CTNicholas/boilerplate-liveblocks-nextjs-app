@@ -1,11 +1,12 @@
 import { Liveblocks } from "@liveblocks/node";
+import { getRandomUser } from "@/app/api/database";
 
 const liveblocks = new Liveblocks({
   secret: process.env.LIVEBLOCKS_SECRET_KEY as string,
 });
 
 export async function POST(request: Request) {
-  const user = { id: "tatumpaolo@example.com", info: { name: "Tatum Paolo" } };
+  const user = getRandomUser();
 
   const session = liveblocks.prepareSession(
     user.id,
