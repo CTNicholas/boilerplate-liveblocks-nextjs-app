@@ -1,8 +1,8 @@
 "use client";
 
-import { useOthers } from "@/liveblocks.config";
+import { useOthers } from "@liveblocks/react";
 
-export function CollaborativeApp() {
+export function App() {
   const others = useOthers();
 
   return <div>There are {others.length} other people online.</div>;

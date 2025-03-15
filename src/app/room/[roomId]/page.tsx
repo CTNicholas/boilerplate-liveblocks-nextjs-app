@@ -1,10 +1,10 @@
-import Room from "@/app/room/[roomId]/Room";
-import { CollaborativeApp } from "@/components/CollaborativeApp";
+import Room from "./room";
+import { App } from "@/components/app";
 
 export default function Page() {
   return (
     <Room>
-      <CollaborativeApp />
+      <App />
     </Room>
   );
 }
